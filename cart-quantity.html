@@ -11,11 +11,13 @@
             margin: 0;
             padding: 0;
         }
+
         body {
             margin-top: 100px;
         }
+
         .carWrapper {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             border: 1px dotted green;
             text-align: center;
@@ -42,8 +44,9 @@
             color: green;
 
         }
+
         .cartButtons {
-            display:flex;
+            display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 20px;
@@ -57,30 +60,56 @@
         <h2 class="cartHeader">Cart Quantity</h2>
         <div class="cartButtons">
             <button onclick="
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        ">Show Quantity</button>
+            console.log(`Cart Quantity: ${cartQuantity}`);">
+            Show Quantity</button>
+
             <button onclick="
             cartQuantity++;
             console.log(`Cart Quantity: ${cartQuantity}`);
         ">Add to Cart</button>
+
             <button onclick="
             cartQuantity += 2;
             console.log(`Cart Quantity: ${cartQuantity}`);
         ">+2</button>
+
             <button onclick="
             cartQuantity += 3;
             console.log(`Cart Quantity: ${cartQuantity}`); 
         ">+3</button>
+
             <button onclick="
             cartQuantity += 4;
             console.log(`Cart Quantity: ${cartQuantity}`);
         ">+4</button>
+
             <button onclick="
             cartQuantity += 5;
             console.log(`Cart Quantity: ${cartQuantity}`);
         ">+5</button>
+
             <button onclick="
-            cartQuantity--;
+                cartQuantity -= 2;
+                console.log(`Cart Quantity: ${cartQuantity}`);
+            ">
+                -2
+            </button>
+            
+            <button onclick="
+                cartQuantity -= 3;
+                console.log(`Cart Quantity: ${cartQuantity}`);
+            ">
+                -3
+            </button>
+
+            <button onclick="
+            if (cartQuantity > 0 ){
+                cartQuantity--;
+            }else {
+                console.log('You don\'t have any items in your cart')
+            }
+
+            
             console.log(`Cart Quantity: ${cartQuantity}`);
         ">
                 Remove Quantity
