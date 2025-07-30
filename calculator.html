@@ -16,7 +16,7 @@
         }
 
         .calculatorContainer {
-            width: 350px;
+            width: 450px;
             margin: 0 auto;
             padding: 50px;
             text-align: center;
@@ -25,19 +25,27 @@
         }
 
         .heading {
-            font-size: 32px;
+            font-size: 42px;
             color: beige;
+            margin-bottom: 30px;
         }
 
         button {
-            border: 1px solid black;
+            border: 1px solid lightgray;
             width: 80px;
             height: 80px;
-            margin-top: 20px;
+            background-color: #333333;
+            border-radius: 50%;
             font-size: 28px;
+            color: #fff;
+            margin: 10px;
+        }
+        .btnCharecter {
+            background-color: #FEA00A;
         }
         .specialBtn {
-            width: 120px;
+            width: 100px;
+            height: 100px;
         }
 
         button:hover {
@@ -63,7 +71,7 @@
             calculation += '3';
             console.log(calculation);
         ">3</button>
-            <button onclick="
+            <button class="btnCharecter" onclick="
             calculation += ' + ';
             console.log(calculation);
         ">+</button>
@@ -82,7 +90,7 @@
                 calculation += '6'
                 console.log(calculation);
             ">6</button>
-            <button onclick="
+            <button class="btnCharecter" onclick="
                 calculation += ' - ';
                 eval(calculation);
                 calculation = eval(calculation);
@@ -102,7 +110,7 @@
                 calculation += '9';
                 console.log(calculation);
             ">9</button>
-            <button onclick="
+            <button class="btnCharecter" onclick="
                 calculation += ' * ';
                 console.log(calculation);
             ">*</button>
@@ -124,7 +132,7 @@
                 calculation = eval(calculation);
                 console.log(calculation.toFixed(2));
             ">=</button>
-            <button onclick="
+            <button class="btnCharecter" onclick="
                 calculation += ' / ';
                 console.log(calculation);
             ">
